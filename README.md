@@ -6,7 +6,7 @@ Uchat is our team program which is made to show how chat could be user friendly 
 Before running the program you should write some commands in terminal and do some monipulations
 1. First of all, we should install brew
 ```bash 
-git clone https://:@gitlab.ucode.world:8443/services/ubrew.git
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 2. Run script 
