@@ -1,0 +1,590 @@
+/*------------------------- GLOBAL CSS NODES -------------------------*/
+
+headerbar{
+  min-height: 26px;
+  padding-left: 8px;
+  background: transparent;
+  border-color: transparent;
+  /* Name of the window */
+  color: transparent;
+  font-size: 13px;
+  font-family: 'Helvetica Neue';
+}
+
+button {
+  border: 2px #fff;
+}
+
+#close{
+  -gtk-icon-size: 12px;
+}
+#minimize{
+  -gtk-icon-size: 12px;
+}
+#maximize{
+  -gtk-icon-size: 12px;
+}
+
+menubar popover{
+  background: red;
+}
+
+/*MAIN WINDOW*/
+.AUTH_window
+{
+  font-family: cursive;
+  background-image: linear-gradient(to right, #212D38 27.5%, rgb(22, 33, 44) 25%, rgb(22, 33, 44) 75%);
+  border-radius: 10px;
+  border-color: #ffffff;
+  opacity: 1;
+}
+
+/*Container with user avatar left-side main window*/
+#search_field {
+  background: #BEBEBE;
+  border:none;
+  border-radius: 20px;
+  margin-left: 10px;
+  min-height: 28px;
+}
+
+#home_icon {
+  -gtk-icon-size: 20px;
+  margin-left: 12px;
+}
+
+#settings_icon{
+  -gtk-icon-size: 22px;
+  margin-left: 12px;
+}
+
+#recent_text {
+  font-family: Arial, asns-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: #fff;
+}
+
+#left_panel {
+  border-color: transparent;
+  background: transparent;
+  box-shadow: none;
+  padding-right: 8px;
+  padding-left: 8px;
+  padding-top: 8px;
+}
+
+/* Add chat container */
+#create_chat_group_name_text {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #C0C0C0;
+  margin-top: 10px;
+}
+
+#add_member_text{
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #C0C0C0;
+  margin-top: 5px; 
+}
+
+#input_field_add_group{
+  border-radius: 10px;
+}
+
+scrolledwindow {
+  background: transparent;
+}
+
+#right_panel{
+  color: white;
+  font-size: 20px;
+  font-family: 'Bradley Hand';
+  min-height: 100px;
+  min-width: 828px;
+}
+
+#right_scroll{
+  background-color: red;
+}
+
+#add_chat{
+  font-size: 30px;
+  font-weight: 700;
+  padding: 1px 1px 1px 1px;
+  background: #212D38;
+  color: white;
+  border-color: transparent;
+  border: 0px;
+}
+
+#submit_button {
+  background:rgb(236, 179, 101);
+  font-family: 'Helvetica Neue';
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  border: 10px;
+  border-radius: 10px;
+}
+
+/*MAIN AUTH BUTTON HOVER*/
+#submit_button:hover {
+  background:rgb(237, 168, 74);
+}
+
+#chat_box{
+  margin-left: -5px;
+}
+
+#change_data_right_box
+{
+  background: red;
+  padding: 15px 10px 20px;
+  border-radius: 10px;
+}
+
+/*------------------------- SETTINGS PANEL -------------------------*/
+
+/* Heading */
+#account_sett_text {
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  color: #fff;
+}
+
+/* Change Photo Section */
+#photo_label {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  color: #B6B6B6;
+}
+
+#change_photo_btn {
+  background:rgb(236, 179, 101);
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+}
+
+#delete_btn {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  background: transparent;
+  border-radius: 5px;
+  border: none;
+}
+
+/* Choosing area button */
+
+#apply_button_avatar {
+  background:rgb(236, 179, 101);
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+/* Button under choosing area of img */
+#apply_button {
+  background:rgb(236, 179, 101);
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+/* Change Name Section */
+#name_label {
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  color: #B6B6B6;
+}
+
+#entry_field_name {
+  border: none;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+#entry_field_surname {
+  border: none;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* BIO Section */
+#bio_label {
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  color: #B6B6B6;
+}
+
+#entry_field_bio {
+  border: none;
+  border-radius: 10px;
+}
+
+#apply_btn {
+  background:rgb(236, 179, 101);
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+}
+
+/*------------------------- THEMES HEADING -------------------------*/
+#themes_label {
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  color: #fff;
+}
+
+#radio_button_dark {
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  padding: 8px 179px 8px 9px;
+  border-radius: 10px;
+}
+
+#radio_button_dark:checked {
+  background-color: #121b24;
+}
+
+#radio_button_light {
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  padding: 8px 179px 8px 9px;
+  border-radius: 10px;
+}
+
+#radio_button_light:checked {
+  background-color: #121b24;
+}
+
+/*------------------------- DELETE ACCOUNT -------------------------*/
+#delete_account_btn {
+  background: transparent;
+  border: solid 1px #ff2c2c;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 10px;
+  color: #ff2c2c;
+}
+
+/*------------------------- LOG OUT FROM ACCOUNT -------------------------*/
+
+#logOut_btn {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ff2c2c;
+  border: solid 1px #ff2c2c;
+  background: transparent;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/*------------------------- PREVIEW BOX -------------------------*/
+
+#change_data_right_box {
+  background-color: #141b22;
+}
+
+#user_name {
+  font-family: Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+}
+
+#user_bio {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #8e8e8e;
+}
+
+#scroll_buttons {
+  background:transparent;
+  border-radius: 0px 0px 0px 0px;
+}
+
+#scroll_button_active {
+  background: #7b7b7b;
+  border-radius: 10px;
+}
+
+#scroll_buttons_border {
+  background: transparent;
+  outline-color: transparent;
+  border-color: transparent;
+  color: transparent;
+  box-shadow: none;
+}
+
+#chat_name {
+  color:#fff;
+  margin-left: 14px;
+  /* margin-bottom: 20px; */
+  font-size: 16px;
+  font-weight: 700;
+}
+#users_check_boxes{
+  color: white;
+}
+#check_button {
+  color:white;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#message_scroll {
+  background: transparent;
+}
+
+#write_message {
+  border-radius: 13px;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px; 
+  padding-top: 12px;
+  padding-left: 12px;
+  padding-bottom: 9px;
+  line-height:  20px;
+  background-color: #212D38;
+  caret-color: #fff;
+  color: #fff;
+}
+
+#write_message text{
+  background-color: #212D38;
+}
+
+#test{
+  background-color: red;
+}
+
+/* #write_message  class */
+/* textview text {
+  background-color: #212D38;
+} */
+
+#message {
+  border-radius: 10px 0px 10px 10px;
+  background: #d59b49;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+
+
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+#incoming-message{
+  border-radius: 0px 10px 10px 10px;
+  background: #233649;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px; 
+
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+#user_name_chat{
+  color: white;
+}
+
+#user_action{
+  color: white;
+}
+
+#my_msg text {
+  background-color: #ECB365;
+}
+
+/*------------------------- CHAT HEADER -------------------------*/
+
+#chat_name_inside_label {
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+}
+
+#last_online {
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #fff;
+  opacity: 0.5;
+}
+
+/*----------GROUP MESSAGES--------------*/
+
+
+/*----------HOMES ACTIVNYJ--------------*/
+#hello_user{
+  font-weight: 900;
+  font-family: Arial, sans-serif;
+  font-size: 36px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-left: 2px;
+  letter-spacing: 2px;
+}
+
+#note_box {
+  padding: 5px 5px 5px 5px;
+}
+
+#note_box_header{
+    background-color:rgb(236, 179, 101);
+    border-radius: 20px 20px 0px 0px;
+    padding-left: 20px;
+    padding-right: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+}
+#note_text_writer{
+  border-radius: 0px 0px 20px 20px;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+#note_box_saver{
+  padding: 7px 25px 5px 26px;
+  background-color: white;
+  color: rgb(236, 179, 101);
+  border-radius: 12px;
+  font-size: 14px;
+  border: 1px solid #fff;
+}
+#note_box_saver:hover{
+  background-color: rgb(236, 179, 101);
+  /*border: 1px solid white;*/
+  color: white;
+}
+
+#weather_box  {
+  background-color: #9c9c9c;
+  padding: 30px 25px 9px 35px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+#weather_day_box {
+  font-size: 52px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+#weather_month_box {
+  font-size: 16px;
+  color: #fff;
+}
+
+#weather_month_label {
+  text-transform: capitalize;
+  margin-top: -7px;
+}
+
+#weather_location_box {
+  font-size: 16px;
+  color: #fff;
+}
+
+#weather_location_label {
+  text-transform: capitalize;
+}
+
+#weather_temperature_box {
+  font-family: Arial, sans-serif;
+  font-size: 48px;
+  color: #fff;
+  font-weight: 700;
+}
+
+/* ---------------- Group Settings Member list ---------------- */
+
+#scrool_member_list {
+  background-color: transparent;
+}
+
+#members_names_group {
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+}
+
+#user_box_group {
+  margin-top: 5px;
+}
+
+#member_list_group_label {
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: #B6B6B6;
+}
