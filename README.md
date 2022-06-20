@@ -12,12 +12,6 @@ Before running the program you should write some commands in terminal and do som
 ```bash
 # for average user
 brew install gtk4
-
-# for campus user
-brew install gtk+3
-
-brew install gtk4
-
 ```
 3. Finaly get to compiling and running the program
 
