@@ -8,12 +8,7 @@ Before running the program you should write some commands in terminal and do som
 ```bash 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
-
-2. Run script 
-```bash
-zsh install.sh
-```
-3. After this manipulations we should download GTK 4
+2. After this manipulations we should download GTK 4
 ```bash
 # for average user
 brew install gtk4
@@ -24,7 +19,7 @@ brew install gtk+3
 brew install gtk4
 
 ```
-4. Finaly get to compiling and running the program
+3. Finaly get to compiling and running the program
 
 ```bash
 make
